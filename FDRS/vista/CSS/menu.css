@@ -1,0 +1,221 @@
+header{
+	width: 100%;
+	height: 650px;
+	background: #00B4DB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, hsla(198, 100%, 37%, 0.671), hsla(195, 100%, 35%, 0.671)), url(../img/Bienvenid@.png);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, hsla(198, 100%, 37%, 0.671), hsla(195, 100%, 35%, 0.671)), url(../img/Bienvenid@.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;	
+}
+
+nav{
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+.navegacion{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.navegacion img{
+	margin: 5px 0 0 50px;
+}
+
+nav a{
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+	margin-right: 10px;
+	padding: 7px 13px;
+
+}
+.active{
+	text-transform: uppercase;
+}
+nav a:hover{
+	color: cyan;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgb(255,255,255),
+						0 0 5px rgb(255,255,255);
+}
+
+header .textos-header{
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.textos-header h1{
+	font-size: 70px;
+	color: #fff;
+}
+
+.textos-header h2{
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/*
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/Scroll Bar/
+	::-ms-scrollbar-track,
+	::-webkit-scrollbar-track
+{
+  border: 0px ;
+  background-color: #4690b0;
+}
+::-ms-scrollbar,
+::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #000;
+}
+::--ms-scrollbar-thumb
+::-webkit-scrollbar-thumb
+{
+  background-color: #000;  
+}
+
+header{
+	width: 100%;
+	background-color: #086A87;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	
+}
+
+nav{
+
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.logo{
+	width: 140px;
+	margin-left: 20px;
+}
+
+.bar-btn{
+	font-size: 25px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.menu-link{
+	position: fixed;
+	width: 100%;
+	height: 0vw;
+	top:  80px;
+	background: rgba(4,137,177, 1);
+	text-align: center;
+	transition: all .5s;
+	z-index: 1000;
+}
+
+.menu-link li{
+	display: none;
+	line-height: 30px;
+	margin: 50px 0;
+	transition: all .5s;
+	list-style: none;
+}
+
+.menu-link li a{
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+}
+
+.menu-link li a.active, .menu-link li a:hover{
+	color: rgb(255,255,0);
+	transition: .3s;
+}
+
+#check{
+	display: none;
+}
+
+#check:checked ~ .menu-link{
+	height: 100vh;
+}
+
+#check:checked ~ .menu-link li{
+		display: block;
+}
+
+/*Responsive
+
+@media screen and (min-width: 800px){
+	
+	.logo{
+	 	margin-left: 50px;
+	 }
+
+	nav{
+		height: 90px;
+	}
+
+	.bar-btn{
+		display: none;
+	}
+
+	.menu-link{
+		position: relative;
+		height: 100px;
+		top: 0;
+		background: none;
+		transition: none;
+		text-align: right;
+		margin-left: 50px;
+	}
+
+	.menu-link li{
+		display: inline-block;
+		line-height: 100px;
+		margin: 0 10px;
+		transition: none;
+	}
+
+	.menu-link li a{
+		font-size: 16px;
+		padding: 7px 13px;
+		text-decoration: none;
+
+	}
+
+	.menu-link li a.active, .menu-link li a:hover{
+		background-color: rgba(0, 0, 0, .3);
+		transition: .4s;
+		border-radius: 8%;
+	}
+
+	.menu img{
+		margin-left: 2em;
+	}
+}
+
+*/

@@ -1,0 +1,143 @@
+header{
+	width: 100%;
+	background: #00B4DB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #00B4DB, #0083B0 );  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #00B4DB, #0083B0);
+	position: relative;
+	z-index: 1000;
+	top: 0;
+	
+}
+
+nav{
+
+	height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.logo{
+	width: 140px;
+	margin-left: 20px;
+}
+
+.bar-btn{
+	font-size: 25px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.menu-link{
+	position: fixed;
+	width: 100%;
+	height: 0vw;
+	top:  80px;
+	background: rgba(4,137,177, 1);
+	text-align: center;
+	transition: all .5s;
+	z-index: 1000;
+}
+
+.menu-link li{
+	display: none;
+	line-height: 30px;
+	margin: 50px 0;
+	transition: all .5s;
+	list-style: none;
+}
+
+.menu-link li a{
+	color: #fff;
+	font-size: 16px;
+	line-height: 70px;
+
+}
+
+.menu-link li a.active, .menu-link li a:hover{
+	box-shadow: none;
+	color: cyan;
+}
+
+#check{
+	display: none;
+}
+
+#check:checked ~ .menu-link{
+	height: 100vh;
+}
+
+#check:checked ~ .menu-link li{
+		display: block;
+}
+
+.nombre{
+	text-transform: uppercase;
+}
+
+@media (min-width: 800px){
+	.logo{
+	 	margin-left: 50px;
+	 }
+
+	nav{
+		height: 90px;
+	}
+
+	.bar-btn{
+		display: none;
+	}
+
+	.menu-link{
+		position: relative;
+		height: 100px;
+		top: 0;
+		background: none;
+		transition: none;
+		text-align: right;
+		margin-left: 50px;
+		width: 1000px;
+	}
+
+	.menu-link li{
+		display: inline-block;
+		line-height: 100px;
+		margin: 0 10px;
+		transition: none;
+	}
+
+	.menu-link li a{
+		font-size: 16px;
+		padding: 7px 13px;
+		text-decoration: none;
+
+	}
+
+	.menu-link li a.active, .menu-link li a:hover{
+		color: cyan;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgb(255,255,255),
+						0 0 5px rgb(255,255,255);
+}
+.menu img{
+	margin-left: 2em;
+}
+	}
+
+	
+
+@media screen and (max-width:800px) {
+		header{
+			width: 120%;
+		}	
+}
+
+@media screen and (max-width:400px) {
+	header{
+		width: 200%;
+	}	
+}
+

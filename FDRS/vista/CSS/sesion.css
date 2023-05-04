@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+body{
+	background: #fff;
+}
+
+.content{
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	box-shadow: 0 0 5px rgb(000,000,000),
+				0 0 5px rgb(000,000,000);;
+
+}
+
+.bgimg{
+	background-image: url('fondo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 40vh;	
+}
+
+.bgimg .letras{
+	position: relative;
+	padding-top: 50%;
+	bottom: 20px;
+	
+}
+
+.bgimg .letras h2{
+
+	margin-left: 20px;
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+}
+
+.bgimg .letras p{
+	margin-left: 20px;
+	font-size: 30px;
+	color: white;
+}
+
+/* formulario */
+
+form{
+	padding: 1rem 4rem;
+	background: rgba(255, 255, 255, .98);
+	
+}
+
+.titulo{
+	margin-top: 0.4em;
+	margin-bottom: 1.5em;
+	color: rgba(0, 116, 217, 1);
+}
+
+fieldset{
+	border-style: none;
+}
+
+input{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #E6E6E6;
+}
+
+label{
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: #15181f;
+}
+
+span{
+	font-weight: bold;
+	color: #0404B4;
+	font-size: 1.3rem;
+}
+
+
+
+/*boton de envio*/
+
+.btn-f{
+	border-radius: 2em;
+	padding: 15px 25px;
+	background-color: rgba(0, 116, 217, 0.9);;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.btn-f:hover{
+	transform: scale(1.05);
+}
+/*no tienes cuenta*/
+
+.registro{
+	margin-top: 10px;
+	border-top: solid 2px rgba(0, 116, 217);
+}
+
+.registro h4{
+	margin-top: 10px;
+	padding: 1em;
+	font-size: 18px;
+}
+
+.registro a{
+	text-decoration: none;
+	color: rgb(0, 116, 217);
+}
+
+/*responsive*/
+
+@media (min-width: 640px){
+	
+
+	
+	.btn-f{
+		width: 100%;
+		font-size: 18px;
+		padding: 16px 18px;
+	}
+	.bgimg{
+		min-height: 20vh;
+	}
+
+}
+
+@media (min-width: 950px){
+	
+	.content{
+		width: 76%;
+		margin: 2.5em;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+	.sesion{
+	display: grid;
+	grid-template-columns: 1fr 1.25fr;
+	
+	}
+
+	
+	.bgimg .letras{
+	position: relative;
+	padding-top: 100%;
+	bottom: 20px;
+	}
+
+	.btn-f{
+		width: 200px;
+	}
+		 
+}
